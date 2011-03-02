@@ -9,13 +9,8 @@ PRODUCT_PACKAGES += ADWLauncher
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=DonMessWivIt.ogg
 
-ifdef CYANOGEN_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmodnightly
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmod
-endif
+    ro.rommanager.developerid=kernelzilla
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -41,7 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     CMParts \
     CMPartsHelper \
-    CMStats \
     CMWallpapers \
     DSPManager \
     FileManager \
@@ -49,7 +43,7 @@ PRODUCT_PACKAGES += \
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+    vendor/cyanogen/CHANGELOG.mkdn:system/etc/CHANGELOG-UNOFFICIAL-CM.txt
 
 # Common CM overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common

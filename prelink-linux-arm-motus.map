@@ -92,7 +92,7 @@ libaudiopolicygeneric.so 0xA9900000 # [???]
 libsoundpool.so         0xA9800000 # [~1M]
 libgps.so               0xA9700000 # [~1M] (moved for Motus)
 libspeech.so            0xA9600000 # [~1M]
-liboemcamera.so          0xA9400000 # [~1M] (moved for Motus)
+libmmcamera.so          0xA9400000 # [~1M] (moved for Motus)
 libmedia_jni.so         0xA9300000 # [~1M]
 libmediaplayerservice.so 0xA9200000 # [~1M]
 libmedia.so             0xA9000000 # [~2M]
@@ -169,7 +169,7 @@ libstagefright.so                  0xA2F00000 # [~4M]
 
 # libraries for specific hardware
 libgsl.so               0xA2E00000 # [~1M]
-libhtc_acoustic.so      0xA2D00000 # [<64K]
+libmm-qcamera-tgt.so      0xA2D00000 # [<64K]
 libril-qc-1.so           0xA2C00000 # [~1M]
 liblvmxipc.so           0xA2B00000 # [~1M] for vendor/nxp
 libreference-cdma-sms.so 0xA2A00000 # [<64K] for hardware/ril
