@@ -1,5 +1,17 @@
 #!/system/bin/sh
 # execute any postinstall script then kill it
+if [ ! -d /data/data/com.cyanogenmod.cmparts ];
+then
+   setprop persist.service.backtrack 1;
+   setprop persist.sys.use_dithering 0;
+fi
+
+if [ ! -e /data/misc/akmd_set.txt ];
+then
+   cp /system/etc/akmd_set.txt /data/misc/;
+   chown system.system /data/misc/akmd_set.txt;
+fi
+
 if [ -e /data/firstboot.sh ];
 then
    log -p i -t boot "Executing firstboot.sh..";

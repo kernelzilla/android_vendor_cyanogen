@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     DSPManager \
     FileManager \
+    AndroidTerm \
     Superuser
 
 # Copy over the changelog to the device

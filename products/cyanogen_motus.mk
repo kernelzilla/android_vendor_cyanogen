@@ -26,13 +26,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/motus
 # Include the Torch and VoiceDialer apps
 PRODUCT_PACKAGES += \
     VoiceDialer \
+    ConnectBot \
     Torch
 
 #
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Unofficial-CM-6.1.2-Motus-beta2
+        ro.modversion=Unofficial-CM-6.1.2-motus-beta3
 
 #
 # Copy Motus specific prebuilt files
